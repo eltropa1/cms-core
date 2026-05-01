@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# builds
+dist/
+build/
+.next/
+out/
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# generated sites / test generated projects
+mi-sitio/
+geo-sitio/
+mi-web/
+miwebV1/
+miwebV2/
+miwebV3/
+sitio-base/
+sitio-basico/
+sitio-medio/
+sitio-completo/
+generated-sites/
+sites/
+
+# Next cache
+.turbo/
+.vercel/
+
+# temporary
+tmp/
+temp/

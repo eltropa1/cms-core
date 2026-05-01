@@ -1,0 +1,38 @@
+{
+  "name": "cms-core",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run --exclude tests/integration --exclude tests/api",
+    "test:unit": "vitest run --exclude tests/integration --exclude tests/api",
+    "test:api": "cross-env DATABASE_URL=postgresql://cms:cms@localhost:5433/cms_core_test vitest run tests/api",
+    "test:integration": "cross-env DATABASE_URL=postgresql://cms:cms@localhost:5433/cms_core_test vitest run --config vitest.integration.config.ts tests/integration",
+    "test:all": "npm run test && npm run test:api && npm run test:integration",
+    "test:watch": "vitest",
+    "dev:api": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/node": "^25.6.0",
+    "@types/pg": "^8.16.0",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "fastify": "^5.8.2",
+    "fastify-plugin": "^5.1.0",
+    "inquirer": "^13.4.1",
+    "pg": "^8.19.0",
+    "zod": "^4.3.6"
+  }
+}
