@@ -51,7 +51,7 @@ export default function Header({
       </div>
 
       {/* Navigation */}
-      <Navigation links={navigation} />
+      <Navigation links={navigation} siteName={siteName} />
     </div>
   </Container>
 
