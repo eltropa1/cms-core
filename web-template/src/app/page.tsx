@@ -1,8 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
 import { Section } from "@/components/layout/Section";
-import { TwoColumnLayout } from "@/components/layout/TwoColumnLayout";
-import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
 
 import { PromiseCard } from "@/components/ui/PromiseCard";
 
@@ -30,9 +27,9 @@ export default function HomePage() {
 
               <div className="-mt-12 md:-mt-16">
                 <div className="w-full">
-                  <div className="grid grid-cols-12 gap-12 items-start">
+                  <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-12 lg:items-start">
                     {/* BLOQUE 1 — TEXTO */}
-                    <div className="col-span-5 flex flex-col justify-center gap-6 min-h-[560px] md:min-h-[640px]">
+                    <div className="order-1 flex flex-col justify-center gap-5 lg:col-span-5 lg:gap-6 lg:min-h-[640px]">
                       {/* etiqueta + línea */}
                       <div className="flex items-center gap-4">
                         <p className="text-sm font-medium uppercase tracking-[0.18em] text-amber-400">
@@ -42,7 +39,7 @@ export default function HomePage() {
                       </div>
 
                       {/* título */}
-                      <h2 className="text-3xl md:text-5xl font-semibold tracking-tight leading-tight text-white">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight text-white">
                         Webs profesionales, sólidas y pensadas para durar.
                       </h2>
 
@@ -59,9 +56,9 @@ export default function HomePage() {
                     </div>
 
                     {/* BLOQUE 2 — CARD DOMINANTE */}
-                    <div className="col-span-4 h-[640px] pt-24">
-                      <div className="h-full flex justify-center">
-                        <div className="group w-[78%] h-full">
+                    <div className="order-2 lg:col-span-4 lg:h-[640px] lg:pt-24">
+                      <div className="h-full flex justify-start lg:justify-center">
+                        <div className="group w-full min-h-[340px] sm:min-h-[380px] lg:w-[78%] lg:h-full">
                           <PromiseCard
                             icon={
                               <svg
@@ -85,9 +82,9 @@ export default function HomePage() {
                     </div>
 
                     {/* BLOQUE 3 — DOS CARDS */}
-                    <div className="col-span-3 flex flex-col gap-10 mt-16">
-                      <div className="min-h-[260px] [&>*]:h-full [&>*]:!py-8 [&>*]:!px-8">
-                        <div className="group h-[260px]">
+                    <div className="order-3 flex flex-col gap-5 sm:grid sm:grid-cols-2 lg:col-span-3 lg:flex lg:grid-cols-none lg:gap-10 lg:mt-16">
+                      <div className="min-h-[220px] lg:min-h-[260px] [&>*]:h-full [&>*]:!py-7 [&>*]:!px-7 lg:[&>*]:!py-8 lg:[&>*]:!px-8">
+                        <div className="group h-[220px] lg:h-[260px]">
                           <PromiseCard
                             icon={
                               <svg
@@ -107,8 +104,8 @@ export default function HomePage() {
                         </div>
                       </div>
 
-                      <div className="min-h-[260px] [&>*]:h-full [&>*]:!py-8 [&>*]:!px-8">
-                        <div className="group h-[260px]">
+                      <div className="min-h-[220px] lg:min-h-[260px] [&>*]:h-full [&>*]:!py-7 [&>*]:!px-7 lg:[&>*]:!py-8 lg:[&>*]:!px-8">
+                        <div className="group h-[220px] lg:h-[260px]">
                           <PromiseCard
                             icon={
                               <svg
@@ -152,14 +149,14 @@ export default function HomePage() {
               <div className="relative z-10">
                 <div className="w-full">
                   {/* CONTENEDOR PRINCIPAL */}
-                  <div className="flex justify-between gap-20 items-start">
+                  <div className="flex flex-col justify-between gap-8 lg:flex-row lg:gap-20 lg:items-start">
                     {/* ================= BLOQUE IZQUIERDO ================= */}
-                    <div className="w-[50%] flex flex-col gap-8">
+                    <div className="w-full flex flex-col gap-5 lg:w-[50%] lg:gap-8">
                       <p className="text-sm tracking-[0.18em] text-amber-400 uppercase">
                         CÓMO SE CONSTRUYE UNA WEB QUE FUNCIONA
                       </p>
 
-                      <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
+                      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
                         Estrategia. Diseño. Conversión.
                       </h2>
 
@@ -173,10 +170,10 @@ export default function HomePage() {
                     </div>
 
                     {/* ================= BLOQUE DERECHO ================= */}
-                    <div className="w-[50%] relative flex flex-col pl-12 gap-2">
+                    <div className="w-full relative flex flex-col pl-5 gap-0 lg:w-[50%] lg:pl-12 lg:gap-2">
                       {/* eje vertical */}
                       <div
-                        className="absolute left-0 top-2 bottom-2 w-px"
+                        className="absolute left-0 top-5 bottom-5 w-px lg:top-2 lg:bottom-2"
                         style={{
                           background:
                             "linear-gradient(to bottom, transparent, rgba(255,255,255,0.15), transparent)",
@@ -185,7 +182,7 @@ export default function HomePage() {
                       />
 
                       {/* ITEM 1 */}
-                      <div className="py-12 border-b border-white/5 flex gap-6 items-start">
+                      <div className="py-7 lg:py-12 border-b border-white/5 flex gap-4 lg:gap-6 items-start">
                         <div className="text-amber-400 mt-1 flex-shrink-0">
                           <svg
                             className="w-6 h-6"
@@ -211,7 +208,7 @@ export default function HomePage() {
                       </div>
 
                       {/* ITEM 2 */}
-                      <div className="py-12 border-b border-white/5 flex gap-6 items-start">
+                      <div className="py-7 lg:py-12 border-b border-white/5 flex gap-4 lg:gap-6 items-start">
                         <div className="text-amber-400 mt-1 flex-shrink-0">
                           <svg
                             className="w-6 h-6"
@@ -236,7 +233,7 @@ export default function HomePage() {
                       </div>
 
                       {/* ITEM 3 */}
-                      <div className="py-12 border-white/5 flex gap-6 items-start">
+                      <div className="py-7 lg:py-12 border-white/5 flex gap-4 lg:gap-6 items-start">
                         <div className="text-amber-400 mt-1 flex-shrink-0">
                           <svg
                             className="w-6 h-6"
@@ -272,14 +269,14 @@ export default function HomePage() {
           {/* ================= SERVICIOS (VARIANTE 2) ================= */}
           <Section variant="default">
             <div className="-mt-8 md:-mt-12">
-              <div className="w-full flex flex-col items-center">
+                <div className="w-full flex flex-col items-start lg:items-center">
                 {/* ================= HEADER ================= */}
-                <div className="max-w-3xl text-center mb-20">
+                <div className="max-w-3xl text-left mb-10 lg:text-center lg:mb-20">
                   <p className="text-sm tracking-[0.18em] text-amber-400 uppercase">
                     QUÉ TIPO DE WEB NECESITAS
                   </p>
 
-                  <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white mt-4">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mt-4">
                     Elige la web ideal para tu negocio
                   </h2>
 
@@ -290,10 +287,10 @@ export default function HomePage() {
                 </div>
 
                 {/* ================= CARDS ================= */}
-                <div className="w-full flex justify-center items-end gap-12">
+                <div className="w-full flex flex-col justify-center items-stretch gap-5 md:grid md:grid-cols-3 md:items-stretch lg:flex lg:flex-row lg:items-end lg:gap-12">
                   {/* CARD 1 */}
-                  <div className="w-[30%] pt-16">
-                    <div className="h-full min-h-[420px] rounded-2xl border border-white/5 bg-neutral-900/40 p-8 flex flex-col justify-between">
+                  <div className="w-full lg:w-[30%] lg:pt-16">
+                    <div className="h-full min-h-[300px] lg:min-h-[420px] rounded-2xl border border-white/5 bg-neutral-900/40 p-7 lg:p-8 flex flex-col justify-between">
                       <div>
                         <div className="text-amber-400 text-2xl mb-6">☆</div>
 
@@ -321,8 +318,8 @@ export default function HomePage() {
                   </div>
 
                   {/* CARD CENTRAL (DOMINANTE) */}
-                  <div className="w-[34%]">
-                    <div className="h-full min-h-[520px] rounded-2xl border border-amber-400/30 bg-neutral-900/60 p-10 flex flex-col justify-between shadow-[0_0_80px_rgba(251,191,36,0.12)]">
+                  <div className="w-full md:-mt-4 lg:mt-0 lg:w-[34%]">
+                    <div className="h-full min-h-[360px] lg:min-h-[520px] rounded-2xl border border-amber-400/30 bg-neutral-900/60 p-8 lg:p-10 flex flex-col justify-between shadow-[0_0_80px_rgba(251,191,36,0.12)]">
                       <div>
                         <div className="flex items-start justify-between mb-6">
                           <div className="text-amber-400 text-3xl">♕</div>
@@ -340,7 +337,7 @@ export default function HomePage() {
                           Desde <span className="text-amber-400">1500 €</span>
                         </p>
 
-                        <p className="mt-10 text-neutral-400 leading-relaxed">
+                        <p className="mt-6 lg:mt-10 text-neutral-400 leading-relaxed">
                           Para negocios que quieren explicar mejor sus
                           servicios, facilitar el contacto y transmitir una
                           imagen más completa.
@@ -357,8 +354,8 @@ export default function HomePage() {
                   </div>
 
                   {/* CARD 3 */}
-                  <div className="w-[30%] pt-16">
-                    <div className="h-full min-h-[420px] rounded-2xl border border-white/5 bg-neutral-900/40 p-8 flex flex-col justify-between">
+                  <div className="w-full lg:w-[30%] lg:pt-16">
+                    <div className="h-full min-h-[300px] lg:min-h-[420px] rounded-2xl border border-white/5 bg-neutral-900/40 p-7 lg:p-8 flex flex-col justify-between">
                       <div>
                         <div className="text-amber-400 text-2xl mb-6">◇</div>
 
@@ -388,7 +385,7 @@ export default function HomePage() {
                 </div>
 
                 {/* ================= TEXTO APOYO ================= */}
-                <div className="mt-16 text-center">
+                <div className="mt-10 lg:mt-16 lg:text-center">
                   <a href="#" className="text-amber-400">
                     Ver tipos de web →
                   </a>
@@ -402,14 +399,14 @@ export default function HomePage() {
           {/* ================= DEMOS / TRABAJOS ================= */}
           <Section variant="default">
             <div className="-mt-6 md:-mt-10 ">
-              <div className="flex justify-between gap-16 items-start">
+              <div className="flex flex-col justify-between gap-8 lg:flex-row lg:gap-16 lg:items-start">
                 {/* ================= IZQUIERDA ================= */}
-                <div className="w-[40%] flex flex-col gap-6 ">
+                <div className="w-full flex flex-col gap-5 lg:w-[40%] lg:gap-6">
                   <p className="text-sm tracking-[0.18em] text-amber-400 uppercase">
                     WEBS CREADAS CON CRITERIO
                   </p>
 
-                  <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
                     Ejemplos reales de cómo debe verse una web profesional
                   </h2>
 
@@ -420,12 +417,12 @@ export default function HomePage() {
                 </div>
 
                 {/* ================= DERECHA ================= */}
-                <div className="w-[60%] flex gap-6">
+                <div className="w-full flex flex-col gap-6 md:grid md:grid-cols-[1.35fr_1fr] lg:w-[60%] lg:flex lg:flex-row">
                   {/* DEMO PRINCIPAL */}
-                  <div className="w-[65%] flex flex-col gap-4 ">
+                  <div className="w-full flex flex-col gap-4 lg:w-[65%]">
                     <a
                       href="/demos/psicologia"
-                      className="h-[320px] rounded-2xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300"
+                      className="h-[260px] sm:h-[320px] rounded-2xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300"
                     >
                       <img
                         src="/demo-1.png"
@@ -454,12 +451,12 @@ export default function HomePage() {
                   </div>
 
                   {/* DEMOS SECUNDARIAS */}
-                  <div className="w-[35%] flex flex-col gap-6">
+                  <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 md:flex md:flex-col lg:w-[35%]">
                     {/* DEMO 2 */}
                     <div className="flex flex-col gap-3">
                       <a
                           href="/demos/clinica-dental">
-                      <div className="h-[140px] rounded-xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300">
+                      <div className="h-[170px] md:h-[140px] rounded-xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300">
                         <img
                           src="/demo-2.png"
                           alt=""
@@ -490,7 +487,7 @@ export default function HomePage() {
                     <div className="flex flex-col gap-3">
                       <a
                         href="/demos/abogacia"
-                        className="h-[140px] rounded-xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300"
+                        className="h-[170px] md:h-[140px] rounded-xl overflow-hidden border border-white/10 relative hover:scale-[1.02] transition-all duration-300"
                       >
                         <img
                           src="/demo-3.png"
@@ -533,14 +530,16 @@ export default function HomePage() {
       relative
       w-full
 
-      flex items-stretch
-      gap-12
+      flex flex-col
+      lg:flex-row lg:items-stretch
+      gap-8 lg:gap-12
 
-      px-8 md:px-12
-      py-6
+      px-6 md:px-8 lg:px-12
+      py-7 lg:py-6
 
       border border-white/10
       rounded-2xl
+      lg:min-h-[280px]
 
       overflow-hidden
 
@@ -549,19 +548,16 @@ export default function HomePage() {
       before:from-transparent before:via-amber-400/40 before:to-transparent
       before:content-['']
     "
-    style={{
-      minHeight: "280px",   // 🔥 CLAVE → SIEMPRE rectangular
-    }}
   >
 
     {/* ========= TEXTO ========= */}
-    <div className="w-[55%] flex flex-col justify-center gap-5">
+    <div className="w-full lg:w-[55%] flex flex-col justify-center gap-4 lg:gap-5">
 
       <p className="text-xs tracking-[0.2em] text-amber-400 uppercase">
         ¿Listo para dar el siguiente paso?
       </p>
 
-      <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-white">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
         Si quieres una web que esté
         <br />
         a la altura de tu negocio,{" "}
@@ -589,12 +585,12 @@ export default function HomePage() {
         </a>
       </div>
 
-    </div>
+   </div>
 
     {/* ========= IMAGEN ========= */}
-   <div className="w-[45%] relative flex items-center justify-end">
+   <div className="w-full lg:w-[45%] relative flex items-center justify-end">
 
-  <div className="h-[300px] w-full flex items-center justify-end pr-2">
+  <div className="h-[220px] sm:h-[260px] lg:h-[300px] w-full flex items-center justify-end lg:pr-2">
 
     <div className="h-full w-full max-w-[95%] relative">
 
