@@ -1,0 +1,22 @@
+/**
+ * Container component
+ *
+ * Provides a consistent max-width, horizontal padding,
+ * and centering for all page sections.
+ *
+ * This ensures a unified layout across the entire site.
+ */
+
+import { ReactNode } from "react";
+
+interface ContainerProps {
+  children: ReactNode;
+}
+
+export default function Container({ children }: ContainerProps) {
+  return (
+    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      {children}
+    </div>
+  );
+}

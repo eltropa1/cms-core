@@ -1,0 +1,1091 @@
+cms-core
+|-- admin-panel
+|   |-- public
+|   |   `-- vite.svg
+|   |-- src
+|   |   |-- api
+|   |   |   |-- endpoints.ts
+|   |   |   `-- httpClient.ts
+|   |   |-- app
+|   |   |   |-- providers.tsx
+|   |   |   |-- queryClient.ts
+|   |   |   `-- router.tsx
+|   |   |-- components
+|   |   |   |-- layout
+|   |   |   |   |-- Header.tsx
+|   |   |   |   |-- MainLayout.tsx
+|   |   |   |   `-- Sidebar.tsx
+|   |   |   `-- ui
+|   |   |       `-- button.tsx
+|   |   |-- features
+|   |   |   |-- categories
+|   |   |   |   |-- api
+|   |   |   |   |   `-- categoriesApi.ts
+|   |   |   |   |-- components
+|   |   |   |   |   |-- CategoriesTable.tsx
+|   |   |   |   |   |-- CategoryDialog.tsx
+|   |   |   |   |   `-- CategoryForm.tsx
+|   |   |   |   |-- hooks
+|   |   |   |   |   |-- useCategories.ts
+|   |   |   |   |   |-- useCreateCategory.ts
+|   |   |   |   |   |-- useDeleteCategory.ts
+|   |   |   |   |   `-- useUpdateCategory.ts
+|   |   |   |   `-- types.ts
+|   |   |   `-- posts
+|   |   |       |-- api
+|   |   |       |   `-- postsApi.ts
+|   |   |       |-- components
+|   |   |       |   |-- PostContentEditor.tsx
+|   |   |       |   |-- PostContentRenderer.tsx
+|   |   |       |   |-- PostForm.tsx
+|   |   |       |   `-- PostsTable.tsx
+|   |   |       |-- editor
+|   |   |       |   |-- cta.ts
+|   |   |       |   |-- infobox.ts
+|   |   |       |   `-- paragraph.ts
+|   |   |       |-- hooks
+|   |   |       |   |-- useArchivePost.ts
+|   |   |       |   |-- useCreatePost.ts
+|   |   |       |   |-- useDeletePost.ts
+|   |   |       |   |-- usePost.ts
+|   |   |       |   |-- usePosts.ts
+|   |   |       |   |-- usePublishPost.ts
+|   |   |       |   `-- useUpdatePost.ts
+|   |   |       `-- types.ts
+|   |   |-- hooks
+|   |   |-- lib
+|   |   |   `-- utils.ts
+|   |   |-- pages
+|   |   |   |-- CategoriesPage.tsx
+|   |   |   |-- DashboardPage.tsx
+|   |   |   |-- NotFoundPage.tsx
+|   |   |   |-- PostEditorPage.tsx
+|   |   |   `-- PostsPage.tsx
+|   |   |-- types
+|   |   |-- utils
+|   |   |-- index.css
+|   |   `-- main.tsx
+|   |-- .gitignore
+|   |-- components.json
+|   |-- eslint.config.js
+|   |-- index.html
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- README.md
+|   |-- tailwind.config.js
+|   |-- tsconfig.app.json
+|   |-- tsconfig.json
+|   |-- tsconfig.node.json
+|   `-- vite.config.ts
+|-- cli
+|   |-- commands
+|   |   `-- createSite.ts
+|   `-- index.ts
+|-- database
+|   `-- migrations
+|       `-- 001_init.sql
+|-- docs
+|   |-- CONTENT_DOCUMENT_STORAGE_CONTRACT.md
+|   |-- InicioDeCadaChat.md
+|   |-- RoadMapFinal.md
+|   `-- ROOT_DOC.md
+|-- generator
+|   |-- application
+|   |   `-- createSite
+|   |       |-- buildSiteConfig.ts
+|   |       |-- createSite.usecase.ts
+|   |       `-- generateProject.ts
+|   |-- domain
+|   |   `-- siteConfig
+|   |       |-- applyOverrides.ts
+|   |       |-- generateSeo.ts
+|   |       |-- mapProductTypeToSiteConfig.ts
+|   |       |-- siteConfig.types.ts
+|   |       `-- transformUserInputToOverrides.ts
+|   `-- infrastructure
+|       |-- fs
+|       |   |-- pruneProject.ts
+|       |   |-- scaffoldProject.ts
+|       |   `-- writeSiteConfig.ts
+|       `-- prompts
+|           `-- userInput.prompt.ts
+|-- geo-sitio
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   `-- posts
+|   |   |       |-- PostCard.tsx
+|   |   |       `-- PostList.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- Geovanis
+|   |-- public
+|   |   |-- about-experience.png
+|   |   |-- about-hero.png
+|   |   |-- blog1.png
+|   |   |-- blog2.png
+|   |   |-- blog3.png
+|   |   |-- cta-image.png
+|   |   |-- demo-1.png
+|   |   |-- demo-2.png
+|   |   |-- demo-3.png
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- hero-person.png
+|   |   |-- hero-person1.png
+|   |   |-- hero-person1.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   |-- Navigation.tsx
+|   |   |   |   |-- Section.tsx
+|   |   |   |   `-- TwoColumnLayout.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   |-- sections
+|   |   |   |   `-- Hero.tsx
+|   |   |   `-- ui
+|   |   |       |-- Button.tsx
+|   |   |       |-- Card.tsx
+|   |   |       `-- PromiseCard.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- mi-web
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   `-- sections
+|   |   |       `-- Hero.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- miwebV1
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- hero-mockup.svg
+|   |   |-- hero-person.png
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   `-- sections
+|   |   |       `-- Hero.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- miwebv2
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- hero-person.png
+|   |   |-- hero-person1.png
+|   |   |-- hero-person1.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   `-- sections
+|   |   |       `-- Hero.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- miwebV3
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- hero-person.png
+|   |   |-- hero-person1.png
+|   |   |-- hero-person1.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   |-- Navigation.tsx
+|   |   |   |   |-- Section.tsx
+|   |   |   |   `-- TwoColumnLayout.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   |-- sections
+|   |   |   |   `-- Hero.tsx
+|   |   |   `-- ui
+|   |   |       |-- Button.tsx
+|   |   |       `-- Card.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- sitio-base
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   `-- posts
+|   |   |       |-- PostCard.tsx
+|   |   |       `-- PostList.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- sitio-basico
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   `-- posts
+|   |   |       |-- PostCard.tsx
+|   |   |       `-- PostList.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- sitio-completo
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   `-- posts
+|   |   |       |-- PostCard.tsx
+|   |   |       `-- PostList.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- sitio-medio
+|   |-- public
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   `-- Navigation.tsx
+|   |   |   `-- posts
+|   |   |       |-- PostCard.tsx
+|   |   |       `-- PostList.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   `-- tsconfig.json
+|-- src
+|   |-- adapters
+|   |   |-- http
+|   |   |   |-- controllers
+|   |   |   |   |-- categoryController.ts
+|   |   |   |   `-- postController.ts
+|   |   |   |-- errors
+|   |   |   |   `-- httpErrorHandler.ts
+|   |   |   |-- plugins
+|   |   |   |   `-- repositoriesPlugin.ts
+|   |   |   |-- routes
+|   |   |   |   |-- categoryRoutes.ts
+|   |   |   |   `-- postRoutes.ts
+|   |   |   |-- schemas
+|   |   |   |   |-- categorySchemas.ts
+|   |   |   |   `-- postSchemas.ts
+|   |   |   |-- serializers
+|   |   |   |   |-- categorySerializer.ts
+|   |   |   |   |-- contentSerializer.ts
+|   |   |   |   `-- postSerializer.ts
+|   |   |   `-- server
+|   |   |       `-- createServer.ts
+|   |   `-- mio
+|   |-- application
+|   |   |-- category
+|   |   |   |-- CreateCategory.ts
+|   |   |   |-- DeleteCategory.ts
+|   |   |   |-- GetCategoryById.ts
+|   |   |   |-- GetCategoryBySlug.ts
+|   |   |   |-- ListCategories.ts
+|   |   |   `-- UpdateCategory.ts
+|   |   |-- content
+|   |   |   `-- ContentMapper.ts
+|   |   |-- errors
+|   |   |   |-- ApplicationError.ts
+|   |   |   |-- CategoryErrors.ts
+|   |   |   |-- ConflictError.ts
+|   |   |   |-- NotFoundError.ts
+|   |   |   `-- PostErrors.ts
+|   |   |-- ports
+|   |   |   `-- CacheInvalidationService.ts
+|   |   `-- post
+|   |       |-- ArchivePost.ts
+|   |       |-- AssignCategoriesToPost.ts
+|   |       |-- CreatePost.ts
+|   |       |-- DeletePost.ts
+|   |       |-- GetPostById.ts
+|   |       |-- GetPostBySlug.ts
+|   |       |-- ListPostsByCategoryId.ts
+|   |       |-- ListPublishedPosts.ts
+|   |       |-- PublishPost.ts
+|   |       |-- UpdatePostContent.ts
+|   |       |-- UpdatePostDescription.ts
+|   |       `-- UpdatePostTitle.ts
+|   |-- domain
+|   |   |-- category
+|   |   |   |-- Category.ts
+|   |   |   |-- CategoryErrors.ts
+|   |   |   `-- CategoryRepository.ts
+|   |   |-- content
+|   |   |   |-- editorial
+|   |   |   |   |-- ParagraphData.ts
+|   |   |   |   `-- ParagraphDataErrors.ts
+|   |   |   |-- structured
+|   |   |   |   |-- CTAData.ts
+|   |   |   |   |-- CTADataErrors.ts
+|   |   |   |   |-- InfoboxData.ts
+|   |   |   |   `-- InfoboxDataErrors.ts
+|   |   |   |-- Block.ts
+|   |   |   |-- BlockRegistry.ts
+|   |   |   |-- BlockTypes.ts
+|   |   |   |-- ContentDocument.ts
+|   |   |   `-- ContentDocumentErrors.ts
+|   |   |-- errors
+|   |   |   `-- DomainError.ts
+|   |   |-- post
+|   |   |   |-- Post.ts
+|   |   |   |-- PostErrors.ts
+|   |   |   `-- PostRepository.ts
+|   |   `-- value-objects
+|   |       |-- PublicationState.ts
+|   |       `-- Slug.ts
+|   |-- infrastructure
+|   |   |-- cache
+|   |   |   `-- NextRevalidationService.ts
+|   |   |-- category
+|   |   |   `-- SqlCategoryRepository.ts
+|   |   |-- db
+|   |   |   `-- connection.ts
+|   |   `-- persistence
+|   |       |-- mio1
+|   |       `-- post
+|   |           |-- PostMapper.ts
+|   |           `-- SqlPostRepository.ts
+|   |-- scripts
+|   |   `-- test-persistence.ts
+|   |-- index.ts
+|   `-- server.ts
+|-- tests
+|   |-- api
+|   |   |-- categoryApi.test.ts
+|   |   `-- postApi.test.ts
+|   |-- application
+|   |   |-- ArchivePost.test.ts
+|   |   |-- AssignCategoriesToPost.test.ts
+|   |   |-- CreateCategory.test.ts
+|   |   |-- CreatePost.test.ts
+|   |   |-- DeleteCategory.test.ts
+|   |   |-- DeletePost.test.ts
+|   |   |-- GetCategoryById.test.ts
+|   |   |-- GetCategoryBySlug.test.ts
+|   |   |-- GetPostById.test.ts
+|   |   |-- GetPostBySlug.test.ts
+|   |   |-- ListCategories.test.ts
+|   |   |-- ListPostsByCategoryId.test.ts
+|   |   |-- ListPublishedPosts.test.ts
+|   |   |-- PublishPost.test.ts
+|   |   |-- UpdateCategory.test.ts
+|   |   |-- UpdatePostContent.test.ts
+|   |   `-- UpdatePostTitle.test.ts
+|   |-- domain
+|   |   |-- Category.test.ts
+|   |   |-- ContentDocument.test.ts
+|   |   |-- CTAData.test.ts
+|   |   |-- DomainError.test.ts
+|   |   |-- InfoboxData.test.ts
+|   |   |-- ParagraphData.test.ts
+|   |   |-- Post.test.ts
+|   |   |-- PublicationState.test.ts
+|   |   `-- Slug.test.ts
+|   `-- integration
+|       |-- category
+|       |   `-- SqlCategoryRepository.test.ts
+|       |-- post
+|       |   `-- SqlPostRepository.test.ts
+|       |-- dbTestHelper.ts
+|       `-- setup.ts
+|-- web-template
+|   |-- public
+|   |   |-- demo-dental
+|   |   |   |-- hero-20260506a.jpg
+|   |   |   |-- hero.jpg
+|   |   |   |-- hero1.jpg
+|   |   |   |-- heroa.jpg
+|   |   |   `-- team-1.jpg
+|   |   |-- about-experience.png
+|   |   |-- about-hero.png
+|   |   |-- blog1.png
+|   |   |-- blog2.png
+|   |   |-- blog3.png
+|   |   |-- cta-image.png
+|   |   |-- demo-1.png
+|   |   |-- demo-2.png
+|   |   |-- demo-3.png
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- hero-person.png
+|   |   |-- hero-person1.png
+|   |   |-- hero-person1.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- src
+|   |   |-- api
+|   |   |   `-- cmsClient.ts
+|   |   |-- app
+|   |   |   |-- about
+|   |   |   |   `-- page.tsx
+|   |   |   |-- api
+|   |   |   |   `-- revalidate
+|   |   |   |       `-- route.ts
+|   |   |   |-- contact
+|   |   |   |   `-- page.tsx
+|   |   |   |-- demos
+|   |   |   |   |-- clinica-dental
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- psicologia
+|   |   |   |       `-- page.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- [slug]
+|   |   |   |   |   `-- page.tsx
+|   |   |   |   `-- page.tsx
+|   |   |   |-- privacy
+|   |   |   |   `-- page.tsx
+|   |   |   |-- services
+|   |   |   |   `-- page.tsx
+|   |   |   |-- terms
+|   |   |   |   `-- page.tsx
+|   |   |   |-- layout.tsx
+|   |   |   |-- page.tsx
+|   |   |   |-- robots.ts
+|   |   |   `-- sitemap.ts
+|   |   |-- components
+|   |   |   |-- content
+|   |   |   |   |-- blocks
+|   |   |   |   |   |-- CTABlock.tsx
+|   |   |   |   |   |-- InfoboxBlock.tsx
+|   |   |   |   |   `-- ParagraphBlock.tsx
+|   |   |   |   `-- ContentRenderer.tsx
+|   |   |   |-- layout
+|   |   |   |   |-- Container.tsx
+|   |   |   |   |-- Footer.tsx
+|   |   |   |   |-- Header.tsx
+|   |   |   |   |-- Navigation.tsx
+|   |   |   |   |-- Section.tsx
+|   |   |   |   `-- TwoColumnLayout.tsx
+|   |   |   |-- posts
+|   |   |   |   |-- PostCard.tsx
+|   |   |   |   `-- PostList.tsx
+|   |   |   |-- sections
+|   |   |   |   |-- home
+|   |   |   |   |   |-- ContactBlock.tsx
+|   |   |   |   |   |-- HeroBlock.tsx
+|   |   |   |   |   |-- ProblemsBlock.tsx
+|   |   |   |   |   |-- ProcessBlock.tsx
+|   |   |   |   |   |-- ResultsBlock.tsx
+|   |   |   |   |   |-- TeamBlock.tsx
+|   |   |   |   |   |-- TreatmentsBlock.tsx
+|   |   |   |   |   `-- TrustBlock.tsx
+|   |   |   |   `-- Hero.tsx
+|   |   |   `-- ui
+|   |   |       |-- Button.tsx
+|   |   |       |-- Card.tsx
+|   |   |       `-- PromiseCard.tsx
+|   |   |-- config
+|   |   |   `-- site.config.ts
+|   |   |-- lib
+|   |   |   `-- buildNavigation.ts
+|   |   |-- styles
+|   |   |   |-- global.d.ts
+|   |   |   `-- globals.css
+|   |   `-- types
+|   |       |-- content.ts
+|   |       |-- navigation.ts
+|   |       `-- post.ts
+|   |-- .env.local
+|   |-- .gitignore
+|   |-- eslint.config.mjs
+|   |-- next-env.d.ts
+|   |-- next.config.ts
+|   |-- package-lock.json
+|   |-- package.json
+|   |-- postcss.config.mjs
+|   |-- README.md
+|   |-- tailwind.config.ts
+|   |-- tsconfig.json
+|   `-- tsconfig.tsbuildinfo
+|-- .gitignore
+|-- package-lock.json
+|-- package.json
+|-- tsconfig.json
+|-- vitest.config.ts
+`-- vitest.integration.config.ts
