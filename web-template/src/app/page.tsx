@@ -340,7 +340,7 @@ export default function HomePage() {
                         <p className="mt-6 lg:mt-10 text-neutral-400 leading-relaxed">
                           Para negocios que quieren explicar mejor sus
                           servicios, facilitar el contacto y transmitir una
-                          imagen más completa.
+                          imagen más sólida.
                         </p>
                       </div>
 
@@ -360,7 +360,7 @@ export default function HomePage() {
                         <div className="text-amber-400 text-2xl mb-6">◇</div>
 
                         <h3 className="text-white text-xl font-semibold">
-                          Web completa
+                          Web premium
                         </h3>
 
                         <p className="mt-2 text-neutral-400">

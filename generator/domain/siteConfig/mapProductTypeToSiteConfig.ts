@@ -104,7 +104,7 @@ export function mapProductTypeToSiteConfig(
   const theme = getThemeDefaults(themeVariant);
 
   const modules = {
-    blog: type !== "basica",
+    blog: type === "completa",
     services: true,
     contactForm: true,
     admin: type === "completa",

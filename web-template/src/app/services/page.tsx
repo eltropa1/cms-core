@@ -51,7 +51,7 @@ const demos = [
     name: "Web esencial",
     description:
       "Una presencia limpia y directa para explicar quién eres, qué haces y cómo contactar contigo sin fricción.",
-    href: "/demos/abogacia",
+    href: "/demos/psicologia",
     columns: ["w-2/3", "w-1/2", "w-3/4"],
     density: "simple",
   },
@@ -69,10 +69,10 @@ const demos = [
     id: "demo-premium",
     name: "Web premium",
     description:
-      "Una plataforma más profunda, con contenido, narrativa editorial y base preparada para crecer en el tiempo.",
-    href: "/demos/psicologia",
+      "Una plataforma más profunda, con contenido, publicación y base preparada para crecer en el tiempo.",
+    href: "/demos/abogacia",
     columns: ["w-5/6", "w-2/3", "w-4/5"],
-    density: "editorial",
+    density: "premium",
   },
 ];
 
@@ -94,7 +94,7 @@ const comparisonGroups = [
     ],
   },
   {
-    title: "Capa editorial y posicionamiento",
+    title: "Capa de crecimiento y posicionamiento",
     rows: [
       { label: "Blog funcional", values: [false, false, true] },
       { label: "Panel administrador", values: [false, false, true] },
@@ -115,26 +115,11 @@ const structureComparisonGroups = [
     ],
   },
   {
-    title: "Profesional + Premium",
-    rows: [
-      { label: "FAQ avanzada", values: [false, true, true] },
-      { label: "Bloques de autoridad", values: [false, true, true] },
-      { label: "Storytelling visual", values: [false, true, true] },
-      { label: "CTAs estratégicos", values: [false, true, true] },
-      { label: "Arquitectura SEO ampliada", values: [false, true, true] },
-    ],
-  },
-  {
     title: "Solo Premium",
     rows: [
-      { label: "Blog funcional", values: [false, false, true] },
-      { label: "Categorías", values: [false, false, true] },
+      { label: "Blog", values: [false, false, true] },
       { label: "Panel administrador", values: [false, false, true] },
-      { label: "Gestión artículos", values: [false, false, true] },
-      {
-        label: "Posicionamiento mediante contenido",
-        values: [false, false, true],
-      },
+      { label: "Publicación de artículos", values: [false, false, true] },
     ],
   },
 ];
@@ -477,8 +462,8 @@ export default function ServicesPage() {
                   Qué incluye cada tipo de web
                 </h3>
                 <p className="mt-4 leading-relaxed text-neutral-400">
-                  Cada nivel tiene una estructura diferente según el objetivo
-                  del negocio.
+                  Todas incluyen una base profesional clara. La Premium añade
+                  blog y sistema de publicación.
                 </p>
               </div>
 

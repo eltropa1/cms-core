@@ -1,324 +1,303 @@
-# CMS Core — Productos Oficiales V1
+# CMS Core — Product Types
 
-> Documento maestro de producto.
->
-> Este archivo define la estructura comercial oficial de los tipos de web del sistema CMS Core.
->
-> Debe servir como referencia única para:
->
-> - ventas,
-> - demos,
-> - contratos,
-> - diseño,
-> - generación automática,
-> - y evolución del producto.
+## Overview
 
----
+CMS Core websites are not simple templates with different colors.
 
-# Filosofía CMS Core
+Each website type represents a different level of:
 
-CMS Core NO busca vender:
-- plantillas genéricas,
-- webs infladas,
-- ni páginas innecesarias.
+- communication depth
+- strategic structure
+- business positioning
+- digital growth capability
 
-La idea es construir:
-- webs profesionales,
-- sólidas,
-- rápidas,
-- modernas,
-- preparadas para durar,
-- y alineadas con negocios reales.
+The goal is to create websites that feel adapted to the real needs of each business.
+
+Every website type is:
+- professional
+- complete
+- production-oriented
+
+The difference is NOT whether the website is “finished”.
+
+The difference is:
+- the communication depth
+- the strategic structure
+- the intended business objective
 
 ---
 
-# Comparativa General
+# 1. WEB ESENCIAL
 
-| Característica | Web Esencial | Web Profesional | Web Completa |
-|---|---|---|---|
-| Diseño premium responsive | ✅ | ✅ | ✅ |
-| Diseño móvil cuidado | ✅ | ✅ | ✅ |
-| Home personalizada | ✅ | ✅ | ✅ |
-| Página servicios | ✅ | ✅ | ✅ |
-| Página contacto | ✅ | ✅ | ✅ |
-| Página sobre mí / empresa | ✅ | ✅ | ✅ |
-| Formulario contacto | ✅ | ✅ | ✅ |
-| SEO técnico base | ✅ | ✅ | ✅ |
-| Optimización velocidad | ✅ | ✅ | ✅ |
-| Estructura visual avanzada | ❌ | ✅ | ✅ |
-| Storytelling visual premium | ❌ | ✅ | ✅ |
-| CTAs estratégicos | ❌ | ✅ | ✅ |
-| Bloques de autoridad | ❌ | ✅ | ✅ |
-| FAQ avanzada | ❌ | ✅ | ✅ |
-| Arquitectura SEO ampliada | ❌ | ✅ | ✅ |
-| Blog funcional | ❌ | ❌ | ✅ |
-| Panel administrador | ❌ | ❌ | ✅ |
-| Gestión de artículos | ❌ | ❌ | ✅ |
-| Sistema categorías | ❌ | ❌ | ✅ |
-| Crecimiento SEO mediante contenido | ❌ | ❌ | ✅ |
-| Escalabilidad editorial | ❌ | ❌ | ✅ |
+## Purpose
+
+A professional website for businesses that need a clear and solid online presence.
+
+The focus is:
+- clarity
+- professionalism
+- accessibility
+- trust
+
+This type is designed to help a business:
+- explain what it does
+- look professional
+- make contact easy
+
+WITHOUT unnecessary complexity.
 
 ---
 
-# Gráfico Comparativo
+## Included Pages
 
-```text
-┌───────────────────────────────────────────────┬──────────────┬──────────────────┬────────────────┐
-│ Característica                               │ ESENCIAL     │ PROFESIONAL      │ COMPLETA       │
-├───────────────────────────────────────────────┼──────────────┼──────────────────┼────────────────┤
-│ Presencia profesional                         │      ✅      │        ✅        │       ✅       │
-│ Diseño premium                                │      ✅      │        ✅        │       ✅       │
-│ Responsive móvil                              │      ✅      │        ✅        │       ✅       │
-│ Formulario contacto                           │      ✅      │        ✅        │       ✅       │
-│ SEO técnico base                              │      ✅      │        ✅        │       ✅       │
-│ Storytelling visual                           │      ❌      │        ✅        │       ✅       │
-│ Conversión estratégica                        │      ❌      │        ✅        │       ✅       │
-│ FAQ / autoridad / proceso                     │      ❌      │        ✅        │       ✅       │
-│ Arquitectura SEO ampliada                     │      ❌      │        ✅        │       ✅       │
-│ Blog                                           │      ❌      │        ❌        │       ✅       │
-│ Panel administrador                           │      ❌      │        ❌        │       ✅       │
-│ Gestión artículos                             │      ❌      │        ❌        │       ✅       │
-│ Crecimiento mediante contenido                │      ❌      │        ❌        │       ✅       │
-└───────────────────────────────────────────────┴──────────────┴──────────────────┴────────────────┘
-
-
--------------------------------------------
-# Comparativa de Productos CMS Core
-
-| Característica | Esencial | Profesional | Completa |
-|:--|:--:|:--:|:--:|
-| Diseño premium responsive | ✅ | ✅ | ✅ |
-| Optimización móvil | ✅ | ✅ | ✅ |
-| Home personalizada | ✅ | ✅ | ✅ |
-| Página de servicios | ✅ | ✅ | ✅ |
-| Página sobre mí / empresa | ✅ | ✅ | ✅ |
-| Página contacto | ✅ | ✅ | ✅ |
-| Formulario de contacto | ✅ | ✅ | ✅ |
-| SEO técnico base | ✅ | ✅ | ✅ |
-| Optimización velocidad | ✅ | ✅ | ✅ |
-| Integración WhatsApp / contacto rápido | ✅ | ✅ | ✅ |
-| Storytelling visual avanzado | — | ✅ | ✅ |
-| Bloques de autoridad | — | ✅ | ✅ |
-| FAQs estratégicas | — | ✅ | ✅ |
-| CTAs avanzadas | — | ✅ | ✅ |
-| Estructura orientada a conversión | — | ✅ | ✅ |
-| Arquitectura SEO ampliada | — | ✅ | ✅ |
-| Blog completo | — | — | ✅ |
-| Panel administrador | — | — | ✅ |
-| Gestión de artículos | — | — | ✅ |
-| Categorías y sistema editorial | — | — | ✅ |
-| Publicación autónoma contenido | — | — | ✅ |
-| Estrategia SEO de crecimiento | — | — | ✅ |
-
----
-
-# Resumen Estratégico
-
-| Producto | Objetivo principal | Ideal para |
-|:--|:--|:--|
-| **Web Esencial** | Tener una presencia profesional sólida | Autónomos y pequeños negocios |
-| **Web Profesional** | Captar más clientes y transmitir autoridad | Psicólogos, clínicas, abogados, consultores |
-| **Web Completa** | Construir autoridad y crecer mediante contenido | Negocios con estrategia SEO y contenido |
-
----
-
-# Comparativa Visual Simplificada
-
-| | Esencial | Profesional | Completa |
-|---|---|---|---|
-| Presencia profesional | ██████████ | ██████████ | ██████████ |
-| Conversión estratégica | ███░░░░░░░ | ██████████ | ██████████ |
-| Autoridad de marca | ███░░░░░░░ | ████████░░ | ██████████ |
-| Escalabilidad | ██░░░░░░░░ | ██████░░░░ | ██████████ |
-| SEO de crecimiento | ░░░░░░░░░░ | ████░░░░░░ | ██████████ |
-| Gestión de contenido | ░░░░░░░░░░ | ░░░░░░░░░░ | ██████████ |
-
----
-
-# Diferencia Real Entre los 3 Niveles
-
-## Web Esencial
-Una web sólida, moderna y profesional para representar correctamente el negocio.
-
-## Web Profesional
-Una web más estratégica, preparada para captar clientes y transmitir autoridad.
-
-## Web Completa
-Una plataforma preparada para crecer mediante contenido, SEO y publicación continua.
-
--------------------------------------------
-
-1. Web Esencial — 1000 €
-Objetivo
-
-Pensada para negocios o profesionales que necesitan:
-
-presencia profesional,
-transmitir confianza,
-y tener una web sólida y moderna.
-
-La prioridad aquí NO es crecer mediante contenido.
-La prioridad es representar bien el negocio.
-
-Ideal para
-autónomos,
-pequeños negocios,
-profesionales locales,
-negocios que viven principalmente de recomendación.
-Ejemplos
-electricistas,
-peluquerías,
-fotógrafos,
-pequeños talleres,
-cerrajeros,
-estudios pequeños.
-Incluye
-Páginas
+```txt id="r1"
 Inicio
 Servicios
-Sobre mí / empresa
+Sobre el negocio
 Contacto
-Diseño
-Diseño premium responsive
-Adaptación móvil cuidada
-Identidad visual coherente
-Estética moderna y profesional
-Funcionalidades
-Formulario de contacto
-Contacto rápido / WhatsApp
-SEO técnico base
-Optimización velocidad
-Redes sociales básicas
-Técnico
-Next.js optimizado
-Código limpio
-Base sólida y mantenible
-Seguridad básica
-NO incluye
+Páginas legales
+What This Website Achieves
+Clearly explains the business
+Creates a professional image
+Makes contact simple
+Gives the business a solid online presence
+Ideal For
+Small businesses
+Independent professionals
+Businesses starting their online presence
+Businesses that do not yet need advanced digital strategy
+Narrative Complexity
+
+LOW
+
+Simple and direct communication.
+
+Typical Structure
+
+Examples:
+
+Hero
+Services
+About
+Contact CTA
+
+The structure is intentionally concise and easy to navigate.
+
+Visual Direction
+
+Usually:
+
+clean
+minimal
+professional
+calm
+Main User Perception
+“This business looks serious and professional.”
+2. WEB PROFESIONAL
+Purpose
+
+A strategically designed website focused on generating more trust and improving conversion.
+
+This level introduces:
+
+stronger structure
+strategic communication
+sector adaptation
+emotional direction
+narrative flow
+
+The goal is not only to inform.
+
+The goal is to:
+
+build confidence
+explain value better
+guide the visitor
+differentiate the business
+Included Pages
+Inicio estratégica
+Servicios detallados
+Sobre el negocio / enfoque
+Proceso de trabajo
+Casos o resultados
+Contacto
+Páginas legales
+
+Optional:
+
+Páginas de servicios individuales
+What This Website Achieves
+Explains the business more effectively
+Generates stronger trust
+Guides visitors step by step
+Differentiates the business from competitors
+Creates a more premium perception
+Ideal For
+Businesses competing seriously
+Premium local services
+Professionals where trust is essential
+Businesses wanting stronger positioning
+Narrative Complexity
+
+MEDIUM → HIGH
+
+This is where narrative structure becomes a key part of the website.
+
+Typical Structure
+
+Examples:
+
+Advanced Hero
+Trust Blocks
+Process
+Emotional / Problem Blocks
+Results
+Team
+CTA de confianza
+
+IMPORTANT:
+
+The structure changes depending on the business sector.
+
+The system is modular and adaptable.
+
+Example Sector Variations
+Dental Clinic
+Problems
+Treatments
+Process
+Results
+
+Focus:
+
+clarity
+confidence
+treatment trust
+Psychology
+Emotional States
+Therapeutic Approach
+Safe Space
+Reflections
+
+Focus:
+
+calm
+listening
+emotional connection
+Law Firm
+Legal Situations
+Strategic Approach
+Legal Criteria
+
+Focus:
+
+control
+strategy
+professionalism
+Visual Direction
+
+More personalized and sector-aware.
+
+Can vary strongly depending on:
+
+emotional tone
+business type
+communication style
+Main User Perception
+“This website feels carefully designed for this type of business.”
+3. WEB PREMIUM
+Purpose
+
+A complete digital presence system designed for long-term growth and authority.
+
+This level introduces:
+
+content systems
+SEO scalability
+publishing structure
+content management
+long-term positioning
+
+The website becomes:
+
+a communication platform
+a positioning tool
+a long-term digital asset
+Included Pages
+Inicio estratégica
+Servicios detallados
+Sobre el negocio / enfoque
 Blog
-Panel administrador
-Gestión dinámica contenido
-Sistema editorial
-SEO de crecimiento
-Publicación artículos
-Posicionamiento Comercial
+Artículos
+Categorías
+Contacto
+Páginas legales
+Additional Features
+Sistema de blog
+Publicación de artículos
+Categorías
+Panel de administración
+Gestión de contenido
+Estructura orientada a SEO
+What This Website Achieves
+Better Google positioning
+Long-term content growth
+Easier publishing workflow
+Stronger authority
+Scalable digital presence
+Ideal For
+Consolidated businesses
+Businesses investing in long-term growth
+Professionals wanting organic traffic
+Businesses building authority through content
+Narrative Complexity
 
-“No necesitas una web enorme.
-Necesitas una web que haga que tu negocio parezca serio.”
+HIGH
 
-2. Web Profesional — 1500 €
-Objetivo
+Includes:
 
-Pensada para negocios que necesitan:
+strategic structure
+content communication
+scalable content systems
+Main User Perception
+“This business has a strong and established digital presence.”
+SIMPLE DIFFERENCE BETWEEN THE 3 TYPES
+WEB ESENCIAL
+“Tener una web profesional.”
+WEB PROFESIONAL
+“Tener una web diseñada para generar más confianza.”
+WEB PREMIUM
+“Tener una web preparada para crecer y posicionar el negocio a largo plazo.”
+Important Architectural Principle
+Reuse ≠ Visual Repetition
 
-captar clientes,
-explicar mejor sus servicios,
-transmitir autoridad,
-y convertir más visitas en contactos.
+CMS Core websites must NOT feel like:
 
-Aquí la web ya empieza a trabajar comercialmente.
+the same template
+different colors only
+cloned structures
 
-Ideal para
-psicólogos,
-clínicas,
-abogados,
-consultores,
-entrenadores,
-profesionales especializados.
-Incluye TODO lo de la Web Esencial
+Instead:
 
-Y además:
+each sector adapts narrative structure
+communication changes
+emotional rhythm changes
+visual direction changes
 
-Estructura avanzada
-Conversión
-llamadas a la acción estratégicas,
-estructura más orientada a captación,
-mejor jerarquía visual.
-Autoridad
-bloques de autoridad,
-proceso de trabajo,
-testimonios,
-preguntas frecuentes.
-SEO ampliado
-arquitectura preparada para crecer,
-estructura mejor organizada,
-mejor profundidad SEO.
-Diseño
-storytelling visual más fuerte,
-composición editorial,
-bloques visuales premium.
-NO incluye
-Blog funcional
-Panel administrador
-Gestión autónoma artículos
-Sistema editorial completo
-Posicionamiento Comercial
+The system is modular and composable.
 
-“La web ya no solo representa tu negocio.
-Empieza a ayudarte a conseguir clientes.”
+NOT visually repetitive.
 
-3. Web Completa — 2000 €
-Objetivo
+Final Positioning
 
-Pensada para negocios o profesionales que quieren:
+CMS Core is not intended to become:
 
-posicionarse en Google,
-generar contenido,
-construir autoridad,
-y tener autonomía editorial.
+a template generator
+a generic website builder
+a no-code platform
 
-Aquí la web se convierte en plataforma.
+The goal is to create:
 
-Ideal para
-psicólogos,
-abogados,
-clínicas premium,
-consultores,
-marcas personales,
-negocios con estrategia SEO real.
-Incluye TODO lo de la Web Profesional
+professionally directed digital presence systems
 
-Y además:
-
-Sistema Blog
-Blog completo
-listado artículos,
-páginas individuales,
-categorías,
-navegación editorial.
-Panel Administrador
-Gestión contenido
-crear artículos,
-editar artículos,
-publicar/despublicar,
-gestionar categorías,
-guardar borradores.
-SEO de crecimiento
-Arquitectura SEO avanzada
-crecimiento orgánico mediante contenido,
-estructura preparada para escalar,
-estrategia editorial.
-Arquitectura superior
-sistema modular ampliado,
-mayor escalabilidad,
-estructura preparada para evolución futura.
-Posicionamiento Comercial
-
-“No solo tienes presencia.
-Empiezas a construir autoridad y crecimiento a largo plazo.”
-
-Diferencia Estratégica entre los 3 niveles
-Tipo	Objetivo Principal
-Esencial	Verse profesional
-Profesional	Conseguir más clientes
-Completa	Crecer y posicionarse
-Nota Importante
-
-Los precios mostrados aquí corresponden a la estructura V1 actual del producto CMS Core.
-
-Podrán evolucionar con:
-
-nuevas funcionalidades,
-integraciones,
-automatizaciones,
-o ampliaciones del sistema.
+adapted to real businesses and real communication needs.

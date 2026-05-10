@@ -152,7 +152,7 @@ export default function ServicesPage() {
                     </svg>
                   </div>
 
-                  <h3 className="text-xl font-semibold">Web completa</h3>
+                  <h3 className="text-xl font-semibold">Web premium</h3>
 
                   <p className="text-neutral-400 mt-3">
                     Para negocios que quieren una web pensada para
