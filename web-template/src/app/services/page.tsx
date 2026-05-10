@@ -103,6 +103,42 @@ const comparisonGroups = [
   },
 ];
 
+const structureComparisonGroups = [
+  {
+    title: "Secciones base",
+    rows: [
+      { label: "Inicio / Home", values: [true, true, true] },
+      { label: "Servicios", values: [true, true, true] },
+      { label: "Sobre mí / Empresa", values: [true, true, true] },
+      { label: "Contacto", values: [true, true, true] },
+      { label: "Formulario contacto", values: [true, true, true] },
+    ],
+  },
+  {
+    title: "Profesional + Premium",
+    rows: [
+      { label: "FAQ avanzada", values: [false, true, true] },
+      { label: "Bloques de autoridad", values: [false, true, true] },
+      { label: "Storytelling visual", values: [false, true, true] },
+      { label: "CTAs estratégicos", values: [false, true, true] },
+      { label: "Arquitectura SEO ampliada", values: [false, true, true] },
+    ],
+  },
+  {
+    title: "Solo Premium",
+    rows: [
+      { label: "Blog funcional", values: [false, false, true] },
+      { label: "Categorías", values: [false, false, true] },
+      { label: "Panel administrador", values: [false, false, true] },
+      { label: "Gestión artículos", values: [false, false, true] },
+      {
+        label: "Posicionamiento mediante contenido",
+        values: [false, false, true],
+      },
+    ],
+  },
+];
+
 function CheckMark({ active }: { active: boolean }) {
   return (
     <span
@@ -433,6 +469,64 @@ export default function ServicesPage() {
                   ))}
                 </div>
               ))}
+            </div>
+
+            <div className="mt-20">
+              <div className="mb-10 max-w-2xl">
+                <h3 className="text-2xl font-semibold tracking-tight md:text-4xl">
+                  Qué incluye cada tipo de web
+                </h3>
+                <p className="mt-4 leading-relaxed text-neutral-400">
+                  Cada nivel tiene una estructura diferente según el objetivo
+                  del negocio.
+                </p>
+              </div>
+
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/30 shadow-[0_0_80px_rgba(251,191,36,0.04)]">
+                <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-amber-400/35 to-transparent" />
+
+                <div className="overflow-x-auto">
+                  <div className="min-w-[720px]">
+                    <div className="grid grid-cols-[1.35fr_repeat(3,0.8fr)] border-b border-white/10 px-5 py-6 text-sm text-neutral-400 sm:px-7">
+                      <div />
+                      {["Web esencial", "Web profesional", "Web premium"].map(
+                        (item) => (
+                          <div key={item} className="text-center text-white">
+                            {item}
+                          </div>
+                        )
+                      )}
+                    </div>
+
+                    {structureComparisonGroups.map((group) => (
+                      <div key={group.title}>
+                        <div className="border-b border-white/5 bg-white/[0.02] px-5 py-4 sm:px-7">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-amber-300/75">
+                            {group.title}
+                          </p>
+                        </div>
+
+                        {group.rows.map((row) => (
+                          <div
+                            key={row.label}
+                            className="grid grid-cols-[1.35fr_repeat(3,0.8fr)] items-center border-b border-white/5 px-5 py-5 last:border-b-0 sm:px-7"
+                          >
+                            <div className="pr-4 text-sm text-neutral-300">
+                              {row.label}
+                            </div>
+                            {row.values.map((value, index) => (
+                              <CheckMark
+                                key={`${row.label}-${index}`}
+                                active={value}
+                              />
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </Container>
         </Section>
