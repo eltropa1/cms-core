@@ -103,23 +103,43 @@ const comparisonGroups = [
   },
 ];
 
-const structureComparisonGroups = [
+const structurePlans = [
   {
-    title: "Secciones base",
-    rows: [
-      { label: "Inicio / Home", values: [true, true, true] },
-      { label: "Servicios", values: [true, true, true] },
-      { label: "Sobre mí / Empresa", values: [true, true, true] },
-      { label: "Contacto", values: [true, true, true] },
-      { label: "Formulario contacto", values: [true, true, true] },
+    title: "Web esencial",
+    note: "Una web profesional seria y sólida.",
+    pages: [
+      "Inicio",
+      "Servicios",
+      "Sobre mí",
+      "Contacto",
     ],
   },
   {
-    title: "Solo Premium",
-    rows: [
-      { label: "Blog", values: [false, false, true] },
-      { label: "Panel administrador", values: [false, false, true] },
-      { label: "Publicación de artículos", values: [false, false, true] },
+    title: "Web profesional",
+    note: "Más profundidad para generar confianza.",
+    pages: [
+      "Inicio",
+      "Servicios",
+      "Sobre mí",
+      "Contacto",
+      "Preguntas frecuentes",
+      "Casos / trabajos realizados",
+      "Proceso de trabajo",
+    ],
+  },
+  {
+    title: "Web premium",
+    note: "Preparada además para contenido y gestión.",
+    pages: [
+      "Inicio",
+      "Servicios",
+      "Sobre mí",
+      "Contacto",
+      "Preguntas frecuentes",
+      "Casos / trabajos realizados",
+      "Proceso de trabajo",
+      "Blog",
+      "Panel Admin",
     ],
   },
 ];
@@ -462,54 +482,58 @@ export default function ServicesPage() {
                   Qué incluye cada tipo de web
                 </h3>
                 <p className="mt-4 leading-relaxed text-neutral-400">
-                  Todas incluyen una base profesional clara. La Premium añade
-                  blog y sistema de publicación.
+                  La estructura visible de cada nivel: páginas claras,
+                  secciones entendibles y una base pensada para funcionar.
                 </p>
               </div>
 
               <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/30 shadow-[0_0_80px_rgba(251,191,36,0.04)]">
                 <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-amber-400/35 to-transparent" />
 
-                <div className="overflow-x-auto">
-                  <div className="min-w-[720px]">
-                    <div className="grid grid-cols-[1.35fr_repeat(3,0.8fr)] border-b border-white/10 px-5 py-6 text-sm text-neutral-400 sm:px-7">
-                      <div />
-                      {["Web esencial", "Web profesional", "Web premium"].map(
-                        (item) => (
-                          <div key={item} className="text-center text-white">
-                            {item}
-                          </div>
-                        )
-                      )}
-                    </div>
-
-                    {structureComparisonGroups.map((group) => (
-                      <div key={group.title}>
-                        <div className="border-b border-white/5 bg-white/[0.02] px-5 py-4 sm:px-7">
-                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-amber-300/75">
-                            {group.title}
-                          </p>
-                        </div>
-
-                        {group.rows.map((row) => (
-                          <div
-                            key={row.label}
-                            className="grid grid-cols-[1.35fr_repeat(3,0.8fr)] items-center border-b border-white/5 px-5 py-5 last:border-b-0 sm:px-7"
-                          >
-                            <div className="pr-4 text-sm text-neutral-300">
-                              {row.label}
-                            </div>
-                            {row.values.map((value, index) => (
-                              <CheckMark
-                                key={`${row.label}-${index}`}
-                                active={value}
-                              />
-                            ))}
-                          </div>
-                        ))}
+                <div className="grid gap-px bg-white/10 md:grid-cols-3">
+                  {structurePlans.map((plan) => (
+                    <article
+                      key={plan.title}
+                      className="bg-neutral-950/55 p-6 sm:p-7"
+                    >
+                      <div className="mb-7">
+                        <p className="text-xs font-medium uppercase tracking-[0.16em] text-amber-300/80">
+                          {plan.title}
+                        </p>
+                        <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+                          {plan.note}
+                        </p>
                       </div>
-                    ))}
-                  </div>
+
+                      <div className="border-t border-white/10 pt-5">
+                        <p className="mb-4 text-sm font-medium text-white">
+                          Páginas
+                        </p>
+
+                        <ul className="space-y-3.5">
+                          {plan.pages.map((page) => (
+                            <li
+                              key={`${plan.title}-${page}`}
+                              className="flex items-start gap-3 text-sm leading-relaxed text-neutral-300"
+                            >
+                              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-amber-400/35 bg-amber-400/10 text-amber-300">
+                                <svg
+                                  className="h-3 w-3"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="1.8"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M5 13l4 4L19 7" />
+                                </svg>
+                              </span>
+                              <span>{page}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </article>
+                  ))}
                 </div>
               </div>
             </div>

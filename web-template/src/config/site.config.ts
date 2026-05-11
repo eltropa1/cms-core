@@ -167,16 +167,16 @@ export const siteConfig: SiteConfig = {
     home: {
       hero: {
         eyebrow: "Clínica dental en Madrid",
-        title: "Tratamientos dentales bien explicados, antes de empezar",
+        title: "Tratamientos dentales con diagnóstico claro y plan definido",
         subtitle:
-          "Revisamos tu caso, te explicamos las opciones y decides con toda la información. Sin presión.",
+          "Valoramos tu caso, te explicamos las opciones y te damos un plan de tratamiento ordenado antes de empezar.",
         bullets: [
-          "Primera valoración sin compromiso",
-          "Especialistas en implantes y estética dental",
-          "Tratamientos planificados, sin improvisar",
+          "Primera valoración con orientación clínica",
+          "Equipo especializado en implantes, ortodoncia y estética",
+          "Presupuesto y fases explicadas antes de decidir",
         ],
         primaryCta: {
-          label: "Pedir cita",
+          label: "Reservar valoración",
           href: "/contact",
         },
         secondaryCta: {
@@ -187,146 +187,164 @@ export const siteConfig: SiteConfig = {
       },
 
       trust: {
-        title: "Una forma de trabajar que prioriza tu tranquilidad",
+        title: "Una clínica organizada para decidir con seguridad",
         subtitle:
-          "Antes de empezar cualquier tratamiento, entendemos tu caso y te explicamos exactamente qué vamos a hacer.",
+          "Cada paciente pasa por un circuito claro: valoración, diagnóstico, opciones, presupuesto y seguimiento.",
         items: [
           {
-            title: "Diagnóstico claro desde el principio",
+            title: "Diagnóstico documentado",
             description:
-              "Revisamos tu caso con detalle y te explicamos qué ocurre y qué opciones tienes.",
+              "Exploramos tu caso, revisamos pruebas y resumimos qué ocurre con un lenguaje directo.",
           },
           {
-            title: "Tratamientos planificados",
+            title: "Plan por fases",
             description:
-              "Cada paso está definido antes de empezar, sin improvisaciones.",
+              "Definimos tiempos, prioridades y alternativas para que sepas qué se hace y cuándo.",
           },
           {
-            title: "Especialización real",
+            title: "Equipo coordinado",
             description:
-              "Enfocados en implantes y estética dental.",
+              "Implantes, ortodoncia y estética trabajan con criterios comunes y seguimiento compartido.",
           },
         ],
       },
 
       problems: {
-        title: "¿En qué podemos ayudarte?",
+        title: "Situaciones que resolvemos en consulta",
         subtitle:
-          "Si te reconoces en alguna de estas situaciones, podemos valorarlo contigo.",
+          "Identificamos la prioridad clínica y te indicamos el camino más razonable para tratarlo.",
         items: [
           {
-            problem: "Me duele una muela",
+            problem: "Dolor, fractura o urgencia dental",
             description:
-              "El dolor suele ser señal de un problema que necesita tratamiento.",
-            ctaLabel: "Ver tratamiento",
-            ctaHref: "#",
+              "Valoramos la causa, estabilizamos la situación y te explicamos si hace falta endodoncia, reconstrucción o extracción.",
+            ctaLabel: "Solicitar valoración",
+            ctaHref: "/contact",
           },
           {
-            problem: "Me falta un diente",
+            problem: "Pérdida de dientes o dificultad al masticar",
             description:
-              "La ausencia de una pieza afecta a la mordida con el tiempo.",
+              "Analizamos hueso, encía y mordida para decidir si conviene implante, prótesis u otra solución planificada.",
             ctaLabel: "Ver implantes",
-            ctaHref: "#",
+            ctaHref: "#tratamientos",
           },
         ],
       },
 
       treatments: {
-        title: "Tratamientos más habituales",
+        title: "Tratamientos principales",
+        subtitle:
+          "Soluciones explicadas por necesidad clínica, no por catálogo: qué problema resuelven, para quién encajan y cómo se planifican.",
         items: [
           {
             name: "Implantes dentales",
             description:
-              "Sustituyen piezas perdidas de forma fija y funcional.",
+              "Reponen piezas perdidas con planificación previa de hueso, encía, mordida y fase protésica.",
             forWho:
-              "Indicado si has perdido uno o varios dientes.",
-            ctaLabel: "Ver tratamiento",
-            ctaHref: "#",
+              "Indicado si has perdido uno o varios dientes o llevas una prótesis que no funciona bien.",
+            ctaLabel: "Valorar implantes",
+            ctaHref: "/contact",
           },
           {
             name: "Ortodoncia",
             description:
-              "Corrige la posición de los dientes y la mordida.",
-            ctaLabel: "Ver tratamiento",
-            ctaHref: "#",
+              "Corrige alineación y mordida con un plan progresivo y controles definidos desde el inicio.",
+            forWho:
+              "Indicado si notas apiñamiento, desgaste, mala mordida o quieres alinear tu sonrisa.",
+            ctaLabel: "Consultar ortodoncia",
+            ctaHref: "/contact",
           },
           {
             name: "Estética dental",
             description:
-              "Mejora el aspecto de tu sonrisa.",
+              "Mejora color, forma y proporción dental manteniendo criterio funcional y resultado natural.",
+            forWho:
+              "Indicado si buscas mejorar tu sonrisa con blanqueamiento, carillas o reconstrucciones estéticas.",
             ctaLabel: "Ver opciones",
-            ctaHref: "#",
+            ctaHref: "/contact",
           },
         ],
       },
 
       process: {
-        title: "Así trabajamos en consulta",
+        title: "Un proceso clínico sin improvisaciones",
+        subtitle:
+          "La primera visita no es solo una cita: ordena el caso, aclara prioridades y permite decidir con información.",
         steps: [
           {
-            title: "1. Valoramos tu caso",
+            title: "1. Valoración inicial",
             description:
-              "Escuchamos y analizamos tu situación.",
+              "Recogemos el motivo de consulta, revisamos antecedentes y detectamos prioridades.",
           },
           {
-            title: "2. Diagnóstico claro",
+            title: "2. Diagnóstico y pruebas",
             description:
-              "Entiendes qué ocurre y tus opciones.",
+              "Exploramos, solicitamos las pruebas necesarias y explicamos qué está pasando.",
           },
           {
-            title: "3. Tratamiento planificado",
+            title: "3. Plan y presupuesto",
             description:
-              "Definimos todo antes de empezar.",
+              "Presentamos opciones, fases, tiempos estimados y costes antes de iniciar.",
           },
           {
-            title: "4. Seguimiento",
+            title: "4. Ejecución y seguimiento",
             description:
-              "Acompañamos todo el proceso.",
+              "Coordinamos citas, revisiones y ajustes para mantener el tratamiento bajo control.",
           },
         ],
       },
 
       results: {
-        title: "Resultados reales",
+        title: "Casos resueltos con planificación",
+        subtitle:
+          "Mostramos el problema, el tratamiento elegido y el resultado funcional para que entiendas cómo se toma la decisión clínica.",
         cases: [
           {
-            title: "Implante dental",
-            problem: "Pérdida de una pieza",
-            treatment: "Implante",
-            result: "Recupera funcionalidad",
+            title: "Implante en zona posterior",
+            problem: "Pérdida de una pieza y sobrecarga al masticar",
+            treatment: "Implante planificado con corona definitiva",
+            result: "Recuperación de función y estabilidad de la mordida",
             testimonial:
-              "Me explicaron todo desde el principio.",
+              "Entendí las fases, los tiempos y el presupuesto antes de empezar.",
           },
         ],
       },
 
       team: {
-        title: "Quién te va a atender",
+        title: "Equipo clínico coordinado",
+        subtitle:
+          "No dependes de una sola persona: el caso se organiza con criterio clínico y seguimiento de equipo.",
         members: [
           {
             name: "Dra. Laura Gómez",
-            role: "Odontóloga",
+            role: "Odontóloga responsable de planificación",
             statement:
-              "Explica cada tratamiento antes de empezar.",
+              "Cada tratamiento debe tener una indicación clara, una secuencia y un seguimiento.",
             description:
-              "Prioriza que el paciente entienda su caso.",
+              "Coordina el diagnóstico, explica las alternativas y organiza el plan para que el paciente sepa qué decisión está tomando.",
+            experience:
+              "Especializada en planificación restauradora, implantes y estética funcional.",
             image: "/demo-dental/team-1.jpg",
           },
         ],
       },
 
       contact: {
-        title: "Pide cita o consúltanos tu caso",
+        title: "Reserva una valoración dental",
+        subtitle:
+          "Cuéntanos qué necesitas y te indicamos el tipo de cita más adecuado para valorar tu caso con orden.",
         primaryCta: {
-          label: "Pedir cita",
+          label: "Reservar cita",
           href: "/contact",
         },
         trustMessages: [
-          "Sin compromiso",
-          "Te explicamos tu caso con claridad",
+          "Respuesta en horario de clínica",
+          "Orientación inicial antes de la visita",
+          "Plan y presupuesto explicados",
         ],
-        address: "Madrid",
-        schedule: "Lunes a viernes",
+        address: "Calle Serrano 128, Madrid",
+        schedule: "Lunes a viernes, 9:30-19:30",
+        extraInfo: "Primera valoración para implantes, ortodoncia y estética dental.",
         formEnabled: true,
       },
     },
