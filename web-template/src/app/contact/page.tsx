@@ -25,8 +25,7 @@ export default function ContactPage() {
               </h1>
 
               <p className="mt-8 max-w-xl text-lg leading-8 text-neutral-300">
-                Si tienes un negocio y quieres una web más clara, más cuidada y
-                mejor preparada para convertir visitas en oportunidades,
+                Si necesitas una web clara y profesional para tu negocio,
                 escríbeme. No hace falta tenerlo todo decidido.
               </p>
             </div>
@@ -55,8 +54,7 @@ export default function ContactPage() {
                 Cuéntame qué necesitas
               </h2>
               <p className="mt-3 max-w-lg text-sm leading-6 text-neutral-400">
-                Este formulario deja preparada la parte visual. Si prefieres ir
-                directo, puedes escribirme al email.
+                Cuéntame brevemente qué necesitas y te responderé personalmente.
               </p>
             </div>
 
@@ -105,7 +103,7 @@ export default function ContactPage() {
                   name="project"
                   rows={6}
                   className="w-full resize-none border-0 border-b border-white/15 bg-transparent px-0 py-4 text-sm leading-7 text-white outline-none transition placeholder:text-neutral-600 focus:border-amber-400"
-                  placeholder="Cuéntame brevemente tu situación, tu negocio o qué te gustaría conseguir."
+                  placeholder="Cuéntame brevemente qué necesitas o qué tienes en mente."
                 />
               </div>
 

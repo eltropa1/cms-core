@@ -18,6 +18,37 @@ export type HeroVariant =
 
 export type SurfaceMode = "light" | "dark";
 
+export type EssentialPage =
+  | "home"
+  | "services"
+  | "about"
+  | "contact";
+
+export type ProfessionalPage =
+  | EssentialPage
+  | "faq"
+  | "process"
+  | "cases";
+
+export type PremiumPage =
+  | ProfessionalPage
+  | "blog"
+  | "post"
+  | "categories";
+
+export type SitePage =
+  | EssentialPage
+  | ProfessionalPage
+  | PremiumPage;
+
+export type SiteModules = {
+  blog: boolean;
+  admin: boolean;
+  services: boolean;
+  contactForm: boolean;
+  categories: boolean;
+};
+
 export type SiteConfig = {
   site: {
     name: string;
@@ -34,13 +65,9 @@ export type SiteConfig = {
     logo: string;
   };
 
-  modules: {
-    blog: boolean;
-    admin: boolean;
-    services: boolean;
-    contactForm: boolean;
-    categories: boolean;
-  };
+  modules: SiteModules;
+
+  pages: SitePage[];
 
   navigation: {
     labels: {
@@ -137,9 +164,11 @@ export const siteConfig: SiteConfig = {
     blog: false,
     admin: false,
     services: true,
-    contactForm: false,
+    contactForm: true,
     categories: false,
   },
+
+  pages: ["home", "services", "about", "contact"],
 
   navigation: {
     labels: {
@@ -664,8 +693,8 @@ export const siteConfig: SiteConfig = {
         title: "Quién llevará tu caso",
         members: [
           {
-            name: "Laura Martín",
-            role: "Abogada",
+            name: "Javier Martín",
+            role: "Abogado",
             statement:
               "Cada decisión legal debe entenderse antes de tomarla",
             description:

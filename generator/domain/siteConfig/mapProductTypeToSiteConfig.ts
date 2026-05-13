@@ -1,6 +1,8 @@
 import type {
   ProductType,
   SiteConfig,
+  SiteModules,
+  SitePage,
   ThemeVariant,
 } from "./siteConfig.types.js";
 import { generateSEODescription } from "./generateSeo.js";
@@ -42,6 +44,47 @@ const BASE_SERVICES = [
       "Analizamos tu situación para ofrecerte soluciones estratégicas.",
   },
 ];
+
+const PRODUCT_MODULES: Record<ProductType, SiteModules> = {
+  basica: {
+    blog: false,
+    admin: false,
+    services: true,
+    contactForm: true,
+    categories: false,
+  },
+  media: {
+    blog: false,
+    admin: false,
+    services: true,
+    contactForm: true,
+    categories: false,
+  },
+  completa: {
+    blog: true,
+    admin: true,
+    services: true,
+    contactForm: true,
+    categories: true,
+  },
+};
+
+const PRODUCT_PAGES: Record<ProductType, SitePage[]> = {
+  basica: ["home", "services", "about", "contact"],
+  media: ["home", "services", "about", "contact", "faq", "process", "cases"],
+  completa: [
+    "home",
+    "services",
+    "about",
+    "contact",
+    "faq",
+    "process",
+    "cases",
+    "blog",
+    "post",
+    "categories",
+  ],
+};
 
 /**
  * Returns visual defaults for each theme variant.
@@ -103,13 +146,8 @@ export function mapProductTypeToSiteConfig(
   const themeVariant: ThemeVariant = "dark-premium";
   const theme = getThemeDefaults(themeVariant);
 
-  const modules = {
-    blog: type === "completa",
-    services: true,
-    contactForm: true,
-    admin: type === "completa",
-    categories: type === "completa",
-  };
+  const modules = { ...PRODUCT_MODULES[type] };
+  const pages = PRODUCT_PAGES[type];
 
   const siteName = "Mi Sitio"; // o lo que venga del input
   const businessType = "servicios profesionales"; // puedes mejorar esto luego
@@ -131,6 +169,8 @@ export function mapProductTypeToSiteConfig(
     },
 
     modules,
+
+    pages: [...pages],
 
     navigation: {
       labels: {

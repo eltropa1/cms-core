@@ -48,6 +48,8 @@ export function applyOverrides(
       categories: base.modules.categories,
     },
 
+    pages: [...base.pages],
+
     navigation: {
       labels: {
         home: overrides.navigation?.labels?.home ?? base.navigation.labels.home,

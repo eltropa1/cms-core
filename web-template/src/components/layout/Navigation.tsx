@@ -58,13 +58,13 @@ export default function Navigation({ links, siteName }: NavigationProps) {
         onClick={() => setIsOpen((prev) => !prev)}
         className="
           group
-          inline-flex h-11 w-11 items-center justify-center
-          rounded-full border border-white/10
-          bg-black/20 text-white
-          shadow-[0_0_30px_rgba(0,0,0,0.35)]
-          backdrop-blur-sm
-          transition-all duration-300
-          hover:border-amber-400/30 hover:bg-white/[0.04]
+          inline-flex h-10 w-10 items-center justify-center
+          rounded-[14px] border border-white/[0.09]
+          bg-neutral-950/28 text-white/88
+          shadow-[0_14px_38px_rgba(0,0,0,0.28)]
+          backdrop-blur-md
+          transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+          hover:border-amber-300/25 hover:bg-white/[0.045] hover:text-amber-100
           md:hidden
         "
         aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
@@ -73,17 +73,17 @@ export default function Navigation({ links, siteName }: NavigationProps) {
       >
         <span className="relative block h-3.5 w-5" aria-hidden="true">
           <span
-            className={`absolute left-0 top-0 h-px w-5 bg-current transition-all duration-300 ${
+            className={`absolute left-0 top-0 h-px w-5 bg-current transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isOpen ? "translate-y-[7px] rotate-45" : ""
             }`}
           />
           <span
-            className={`absolute left-0 top-[7px] h-px bg-current transition-all duration-300 ${
+            className={`absolute left-0 top-[7px] h-px bg-current transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isOpen ? "w-0 opacity-0" : "w-5 opacity-100"
             }`}
           />
           <span
-            className={`absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-300 ${
+            className={`absolute bottom-0 left-0 h-px w-5 bg-current transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isOpen ? "-translate-y-[7px] -rotate-45" : ""
             }`}
           />
@@ -91,12 +91,12 @@ export default function Navigation({ links, siteName }: NavigationProps) {
       </button>
 
       {/* DESKTOP MENU */}
-      <ul className="hidden md:flex items-center gap-6">
+      <ul className="hidden md:flex items-center gap-7">
         {links.map((link) => (
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-sm font-medium text-neutral-300 hover:text-amber-400 transition-colors"
+              className="text-[13px] font-medium uppercase tracking-[0.12em] text-white/62 transition-colors duration-500 hover:text-amber-300"
             >
               {link.label}
             </Link>
@@ -107,7 +107,7 @@ export default function Navigation({ links, siteName }: NavigationProps) {
       {/* MOBILE LAYER */}
       <div
         id="mobile-navigation"
-        className={`fixed inset-0 z-40 md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-40 md:hidden transition-opacity duration-[620ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -115,13 +115,13 @@ export default function Navigation({ links, siteName }: NavigationProps) {
       >
         {/* OVERLAY */}
         <div
-          className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"
+          className="absolute inset-0 bg-black/72 backdrop-blur-[3px]"
           onClick={() => setIsOpen(false)}
         />
 
         {/* PANEL */}
         <div
-          className={`absolute inset-0 z-50 overflow-hidden bg-[rgba(5,5,5,0.96)] transform transition-all duration-500 ease-out ${
+          className={`absolute inset-0 z-50 overflow-hidden bg-[rgba(6,6,6,0.94)] transform backdrop-blur-md transition-all duration-[760ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isOpen
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-3"
@@ -143,7 +143,7 @@ export default function Navigation({ links, siteName }: NavigationProps) {
               <Link
                 href="/"
                 onClick={handleLinkClick}
-                className="text-base font-semibold tracking-tight text-white"
+                className="text-[15px] font-medium tracking-[0.08em] text-white/92"
               >
                 {siteName}
               </Link>
@@ -151,11 +151,11 @@ export default function Navigation({ links, siteName }: NavigationProps) {
               <button
                 onClick={() => setIsOpen(false)}
                 className="
-                  inline-flex h-11 w-11 items-center justify-center
-                  rounded-full border border-white/10
-                  bg-white/[0.03] text-white
-                  transition-all duration-300
-                  hover:border-amber-400/30 hover:bg-white/[0.06]
+                  inline-flex h-10 w-10 items-center justify-center
+                  rounded-[14px] border border-white/[0.09]
+                  bg-white/[0.035] text-white/88
+                  transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+                  hover:border-amber-300/25 hover:bg-white/[0.06] hover:text-amber-100
                 "
                 aria-label="Cerrar menú"
               >
@@ -167,11 +167,11 @@ export default function Navigation({ links, siteName }: NavigationProps) {
             </div>
 
             <div className="flex flex-1 items-center">
-              <ul className="flex w-full flex-col gap-7">
+              <ul className="flex w-full flex-col gap-6">
                 {links.map((link, index) => (
                   <li
                     key={link.label}
-                    className={`transition-all duration-500 ease-out ${
+                    className={`transition-all duration-[680ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
                       isOpen
                         ? "translate-x-0 opacity-100"
                         : "translate-x-3 opacity-0"
@@ -186,14 +186,14 @@ export default function Navigation({ links, siteName }: NavigationProps) {
                       className="
                         group flex items-center justify-between
                         border-b border-white/[0.06] pb-5
-                        text-[1.05rem] font-medium
-                        tracking-[0.08em] text-white
-                        transition-colors duration-300
+                        text-[1rem] font-medium
+                        tracking-[0.09em] text-white/92
+                        transition-colors duration-500
                         hover:text-amber-300
                       "
                     >
                       <span>{link.label}</span>
-                      <span className="h-px w-8 bg-amber-400/45 transition-all duration-300 group-hover:w-12 group-hover:bg-amber-300" />
+                      <span className="h-px w-8 bg-amber-400/38 transition-all duration-500 group-hover:w-12 group-hover:bg-amber-300" />
                     </Link>
                   </li>
                 ))}

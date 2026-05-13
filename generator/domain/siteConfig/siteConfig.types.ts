@@ -14,6 +14,37 @@ export type SurfaceMode = "light" | "dark";
 
 export type ProductType = "basica" | "media" | "completa";
 
+export type EssentialPage =
+  | "home"
+  | "services"
+  | "about"
+  | "contact";
+
+export type ProfessionalPage =
+  | EssentialPage
+  | "faq"
+  | "process"
+  | "cases";
+
+export type PremiumPage =
+  | ProfessionalPage
+  | "blog"
+  | "post"
+  | "categories";
+
+export type SitePage =
+  | EssentialPage
+  | ProfessionalPage
+  | PremiumPage;
+
+export type SiteModules = {
+  blog: boolean;
+  admin: boolean;
+  services: boolean;
+  contactForm: boolean;
+  categories: boolean;
+};
+
 export type SiteConfig = {
   site: { name: string; url: string };
   seo: {
@@ -22,13 +53,8 @@ export type SiteConfig = {
     defaultDescription: string;
   };
   branding: { logo: string };
-  modules: {
-    blog: boolean;
-    admin: boolean;
-    services: boolean;
-    contactForm: boolean;
-    categories: boolean;
-  };
+  modules: SiteModules;
+  pages: SitePage[];
   navigation: {
     labels: {
       home: string;

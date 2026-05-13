@@ -92,19 +92,21 @@ function renderCenteredGlow(
         <div className="relative z-20 pt-20 lg:pt-24">
           <div className="max-w-[720px] text-center lg:text-left lg:pl-10">
 
-            <h1 className="font-semibold tracking-tight tracking-[-0.02em] leading-[1.08] lg:leading-[1.02] text-white">
+            <p className="font-semibold tracking-tight tracking-[-0.02em] leading-[1.08] lg:leading-[1.02] text-white">
               <span className="block text-4xl sm:text-5xl text-neutral-500 tracking-wide">
-                No hacemos webs solo bonitas.
+                Diseño web profesional con estructura y criterio.
               </span>
+            </p>
 
+            <h1 className="font-semibold tracking-tight tracking-[-0.02em] leading-[1.08] lg:leading-[1.02] text-white">
               <span className="block text-6xl sm:text-7xl lg:text-8xl mt-6 lg:mt-8">
-                Hacemos webs que hacen que te{" "}
+                Hacemos webs para que te{" "}
                 <span className="text-amber-400">elijan</span> antes.
               </span>
             </h1>
 
             <p className="text-base sm:text-lg mt-8 text-neutral-400 leading-relaxed max-w-[560px]">
-              Diseño con intención, sin procesos innecesarios. Para que quien entra confíe y actúe.
+              Claridad, estructura y diseño con intención. Sin procesos innecesarios.
             </p>
 
             <div className="pt-12 lg:pt-14">

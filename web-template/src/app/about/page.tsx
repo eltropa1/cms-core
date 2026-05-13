@@ -27,20 +27,17 @@ export default function AboutPage() {
                 </p>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
-                  No hago webs
+                  Diseño webs con
                   <br />
-                  por hacerlas.
+                  intención y criterio.
                 </h1>
 
                 <p className="mt-7 text-xl sm:text-2xl text-neutral-300 leading-relaxed max-w-xl">
-                  Trabajo cada proyecto con criterio
-                  <br />
-                  y con intención real.
+                  Claridad, estructura y una forma seria de trabajar.
                 </p>
 
                 <p className="mt-6 lg:mt-8 text-base sm:text-lg text-neutral-500 leading-relaxed max-w-lg">
-                  Si tu web tiene que representar tu negocio,
-                  tiene que estar bien construida.
+                  Si tu web representa tu negocio, merece estar bien construida.
                 </p>
 
                 <div className="mt-8 lg:mt-10">
@@ -76,22 +73,20 @@ export default function AboutPage() {
                 </p>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
-                  No se trata de
+                  Una web clara
                   <br />
-                  hacer una web bonita.
+                  funciona mejor.
                 </h2>
 
                 <div className="w-12 lg:w-14 h-[2px] bg-amber-400 mt-6 mb-7 lg:mt-8 lg:mb-10" />
 
                 <div className="space-y-5 lg:space-y-8 text-neutral-400 text-base sm:text-lg leading-relaxed max-w-xl">
                   <p>
-                    Se trata de que quien entra entienda lo que haces,
-                    confíe en ti y tenga claro por qué elegirte.
+                    Cuando todo está claro, confiar resulta más fácil.
                   </p>
 
                   <p>
-                    Cada decisión en el diseño, en la estructura y en el contenido
-                    tiene un objetivo: que tu web funcione.
+                    Diseño, estructura y contenido deben trabajar juntos.
                   </p>
                 </div>
               </div>
@@ -101,19 +96,19 @@ export default function AboutPage() {
                 <AboutCard
                   icon="person"
                   title="Trabajo directo, sin intermediarios"
-                  text="Tratas conmigo de principio a fin. Comunicación clara, rápida y sin capas."
+                  text="Comunicación clara de principio a fin."
                 />
 
                 <AboutCard
                   icon="list"
-                  title="Sin procesos innecesarios"
-                  text="Lo importante es el resultado. Simplifico el proceso para que todo fluya."
+                  title="Proceso claro"
+                  text="Todo el proyecto se construye de forma ordenada y sencilla."
                 />
 
                 <AboutCard
                   icon="target"
-                  title="Cada decisión tiene un porqué"
-                  text="No diseño por gusto. Diseño con intención y criterio."
+                  title="Diseño con criterio"
+                  text="Nada se añade porque sí."
                 />
               </div>
             </div>
@@ -131,9 +126,9 @@ export default function AboutPage() {
                 </p>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
-                  He visto muchas webs
+                  Muchas webs comunican mal
                   <br />
-                  que no funcionan.
+                  lo que hacen.
                 </h2>
 
                 <div className="w-12 lg:w-14 h-[2px] bg-amber-400 mt-6 mb-7 lg:mt-8 lg:mb-10" />
@@ -144,7 +139,7 @@ export default function AboutPage() {
                   </p>
 
                   <p>
-                    Ahí es donde pongo el foco.
+                    Por eso doy tanta importancia a la claridad.
                   </p>
                 </div>
               </div>
@@ -192,8 +187,7 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="mt-5 lg:mt-6 text-neutral-400 leading-relaxed max-w-lg">
-                  Cuéntame tu proyecto y vemos cómo puedo ayudarte
-                  a llevar tu web al nivel que tu negocio necesita.
+                  Cuéntame qué necesitas y vemos si puedo ayudarte.
                 </p>
               </div>
 

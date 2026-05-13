@@ -48,8 +48,7 @@ export default function HomePage() {
 
                       {/* texto */}
                       <p className="text-neutral-400 leading-relaxed max-w-sm">
-                        Diseñadas para transmitir confianza, explicar mejor tu
-                        servicio y dar una presencia real a tu negocio.
+                        Diseñadas para transmitir confianza desde el primer vistazo.
                       </p>
                       {/* línea decorativa */}
                       <div className="w-12 h-[2px] bg-amber-400" />
@@ -73,7 +72,7 @@ export default function HomePage() {
                               </svg>
                             }
                             title="Mensaje claro"
-                            description="Si alguien no entiende lo que haces en pocos segundos, no te va a elegir."
+                            description="Si alguien no entiende lo que haces en pocos segundos, difícilmente te va a elegir."
                             highlight
                             align="center"
                           />
@@ -98,7 +97,7 @@ export default function HomePage() {
                               </svg>
                             }
                             title="Estructura que guía"
-                            description="Cada bloque tiene un propósito: ayudar al visitante a avanzar y tomar una decisión."
+                            description="La estructura también transmite profesionalidad."
                             align="top"
                           />
                         </div>
@@ -157,12 +156,11 @@ export default function HomePage() {
                       </p>
 
                       <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
-                        Estrategia. Diseño. Conversión.
+                        Claridad. Estructura. Presencia.
                       </h2>
 
                       <p className="text-neutral-400 leading-relaxed max-w-md">
-                        Un proceso claro para que tu web deje de ser un gasto y
-                        pase a ser una herramienta real.
+                        Una forma clara y profesional de presentar tu negocio.
                       </p>
 
                       {/* línea decorativa */}
@@ -198,11 +196,10 @@ export default function HomePage() {
 
                         <div className="flex flex-col gap-2">
                           <h3 className="text-white font-semibold">
-                            Estrategia digital
+                            Entender el negocio
                           </h3>
                           <p className="text-neutral-400 text-sm mt-3 leading-relaxed">
-                            Entendemos tu negocio y qué necesita comunicar para
-                            posicionarse con claridad.
+                            Cada negocio necesita transmitir algo distinto.
                           </p>
                         </div>
                       </div>
@@ -226,8 +223,7 @@ export default function HomePage() {
                             Diseño con intención
                           </h3>
                           <p className="text-neutral-400 text-sm mt-3 leading-relaxed">
-                            Cada decisión visual tiene un objetivo: transmitir
-                            confianza y facilitar la comprensión.
+                            El diseño también influye en cómo te perciben.
                           </p>
                         </div>
                       </div>
@@ -248,11 +244,10 @@ export default function HomePage() {
 
                         <div className="flex flex-col gap-2">
                           <h3 className="text-white font-semibold">
-                            Desarrollo y optimización
+                            Base técnica
                           </h3>
                           <p className="text-neutral-400 text-sm mt-3 leading-relaxed">
-                            Construimos una web rápida, estable y lista para
-                            convertir desde el primer día.
+                            Rápida, estable y preparada para durar.
                           </p>
                         </div>
                       </div>
@@ -277,12 +272,11 @@ export default function HomePage() {
                   </p>
 
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white mt-4">
-                    Elige la web ideal para tu negocio
+                    Qué tipo de web necesitas.
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed mt-6">
-                    Soluciones pensadas para cada etapa. Desde lo esencial para
-                    empezar hasta una base preparada para crecer.
+                    Distintas formas de presentar tu negocio según lo que necesites hoy.
                   </p>
                 </div>
 
@@ -303,8 +297,7 @@ export default function HomePage() {
                         </p>
 
                         <p className="mt-6 text-neutral-400 leading-relaxed text-sm">
-                          Para negocios que necesitan una presencia profesional
-                          clara y bien presentada desde el primer día.
+                          Para negocios que necesitan una presencia profesional clara y sencilla.
                         </p>
                       </div>
 
@@ -338,9 +331,7 @@ export default function HomePage() {
                         </p>
 
                         <p className="mt-6 lg:mt-10 text-neutral-400 leading-relaxed">
-                          Para negocios que quieren explicar mejor sus
-                          servicios, facilitar el contacto y transmitir una
-                          imagen más sólida.
+                          Para negocios que necesitan explicar mejor sus servicios y transmitir más confianza.
                         </p>
                       </div>
 
@@ -368,9 +359,7 @@ export default function HomePage() {
                         </p>
 
                         <p className="mt-6 text-neutral-400 leading-relaxed text-sm">
-                          Para negocios que quieren una web con blog, contenido
-                          inicial y una base preparada para crecer con el
-                          tiempo.
+                          Para negocios que quieren una estructura más completa y preparada para crecer.
                         </p>
                       </div>
 
@@ -407,12 +396,11 @@ export default function HomePage() {
                   </p>
 
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white">
-                    Ejemplos reales de cómo debe verse una web profesional
+                    Ejemplos reales de webs profesionales.
                   </h2>
 
                   <p className="text-neutral-400 leading-relaxed max-w-md">
-                    Casos pensados para transmitir claridad, confianza y una
-                    presencia sólida.
+                    Diseñadas para transmitir claridad y confianza.
                   </p>
                 </div>
 
@@ -502,7 +490,7 @@ export default function HomePage() {
                         <p className="text-amber-400 text-xs">Abogacía</p>
 
                         <h4 className="text-white font-medium">
-                          Defensa legal estratégica
+                          Despacho legal
                         </h4>
 
                         <a
@@ -565,7 +553,7 @@ export default function HomePage() {
       </h2>
 
       <p className="text-neutral-400 max-w-md leading-relaxed">
-        Trabajo contigo de forma directa, sin ruido ni procesos innecesarios.
+        Trabajo contigo de forma directa y clara.
       </p>
 
       <div className="pt-2">

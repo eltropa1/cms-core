@@ -139,7 +139,8 @@ const structurePlans = [
       "Casos / trabajos realizados",
       "Proceso de trabajo",
       "Blog",
-      "Panel Admin",
+      "Artículos",
+      "Categorías",
     ],
   },
 ];
@@ -441,7 +442,7 @@ export default function ServicesPage() {
             <div className="overflow-hidden rounded-2xl border border-white/10 bg-neutral-900/35">
               <div className="grid grid-cols-[1.35fr_repeat(3,0.8fr)] border-b border-white/10 px-4 py-5 text-sm text-neutral-400 sm:px-6">
                 <div />
-                {["Esencial", "Profesional", "Premium"].map((item) => (
+                {["Web esencial", "Web profesional", "Web premium"].map((item) => (
                   <div key={item} className="text-center text-white">
                     {item}
                   </div>
