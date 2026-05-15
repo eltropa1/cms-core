@@ -198,7 +198,7 @@ export default function ServicesPage() {
 
         {/* IZQUIERDA */}
         <h2 className="text-3xl md:text-4xl font-semibold md:pl-6">
-          No se trata de hacer una web bonita.
+          Una web clara transmite mejor lo que haces.
         </h2>
 
         {/* DERECHA */}
@@ -249,7 +249,7 @@ export default function ServicesPage() {
         </p>
 
         <h2 className="text-3xl font-semibold mt-4">
-          Un proceso directo, sin complicaciones.
+          Un proceso claro y directo.
         </h2>
       </div>
 

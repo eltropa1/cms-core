@@ -13,7 +13,7 @@ const plans = [
       "Contacto rápido",
       "Base sólida y moderna",
     ],
-    href: "#demo-esencial",
+    href: "/demos/psicologia",
   },
   {
     title: "Web profesional",
@@ -26,7 +26,7 @@ const plans = [
       "Estructura comercial",
       "Autoridad y confianza",
     ],
-    href: "#demo-profesional",
+    href: "/demos/clinica-dental",
     featured: true,
     badge: "MÁS ELEGIDA",
   },
@@ -41,7 +41,7 @@ const plans = [
       "Posicionamiento SEO",
       "Plataforma preparada para evolucionar",
     ],
-    href: "#demo-premium",
+    href: "/demos/abogacia",
   },
 ];
 
@@ -261,18 +261,11 @@ export default function ServicesPage() {
               </div>
 
               <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight md:text-6xl">
-                Qué tipo de web necesita realmente tu negocio
+                Qué tipo de web necesita tu negocio.
               </h1>
 
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">
-                No todos los negocios necesitan lo mismo.
-                <br />
-                Y no todas las webs cumplen la misma función.
-                <br />
-                <span className="text-amber-300">
-                  Aquí tienes tres formas claras de hacerlo bien, según el
-                  momento de tu negocio.
-                </span>
+                Tres formas claras de construir la web que necesita tu negocio.
               </p>
             </div>
           </Container>
@@ -352,11 +345,10 @@ export default function ServicesPage() {
                 DEMOS REALES
               </p>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-5xl">
-                Así se ve cada tipo de web
+                Cómo se presenta cada tipo de web.
               </h2>
               <p className="mt-5 leading-relaxed text-neutral-400">
-                No se trata solo de características. Cada nivel tiene una
-                estructura, una intención y una profundidad diferente.
+                Cada estructura responde a una necesidad distinta.
               </p>
             </div>
 
@@ -398,7 +390,7 @@ export default function ServicesPage() {
 
               <div className="grid items-start gap-12 md:grid-cols-2">
                 <h2 className="text-3xl font-semibold leading-tight md:pl-6 md:text-4xl">
-                  No se trata de hacer una web bonita.
+                  Una web clara transmite mejor lo que haces.
                 </h2>
 
                 <div className="flex max-w-md flex-col gap-4 text-neutral-400">
@@ -431,7 +423,7 @@ export default function ServicesPage() {
                 DIFERENCIA REAL
               </p>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-5xl">
-                Qué cambia realmente entre niveles
+                Qué cambia entre cada tipo de web.
               </h2>
               <p className="mt-5 leading-relaxed text-neutral-400">
                 La diferencia no es tener “más cosas”. Es el papel que la web
@@ -550,7 +542,7 @@ export default function ServicesPage() {
                 </p>
 
                 <h2 className="mt-4 text-3xl font-semibold leading-tight">
-                  Un proceso directo, sin complicaciones.
+                  Un proceso claro y directo.
                 </h2>
               </div>
 
@@ -603,11 +595,11 @@ export default function ServicesPage() {
               <div className="relative z-10 flex flex-col justify-between gap-8 md:flex-row md:items-center">
                 <div>
                   <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                    No necesitas la web más grande.
+                    La web correcta depende de lo que necesita tu negocio.
                   </h2>
 
                   <p className="mt-4 text-lg text-neutral-400">
-                    Necesitas la adecuada para tu negocio.
+                    Cada proyecto necesita una estructura distinta.
                   </p>
                 </div>
 
